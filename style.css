@@ -67,11 +67,6 @@ pre {
 	padding: 16px 24px;
 }
 
-pre code {
-	padding: 0;
-	border: none;
-}
-
 input, textarea, button, .comment_list .comment-reply-link {
 	padding: 6px 8px;
 	border: 1px solid #DDD;
@@ -203,7 +198,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	z-index: 10;
 	width: 100%;
 	text-align: center;
-	background: #3A3434;
+	background: #494778;
 	box-shadow: 0 0 2px #444;
 }
 
@@ -347,7 +342,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 
 .header_nav .nav_search_input:focus {
 	width: 200px;
-	background: #232425;
+	background: #595788;
 }
 
 .header_hgroup {
@@ -356,8 +351,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	left: 15%;
 	padding: 35px 30px 30px 30px;
 	max-width: 40%;
-	background: #3A3434;
-	background: rgba(58, 52, 52, 0.66);
+	background: rgba(201, 199, 232, 0.13);
 }
 
 .header {
@@ -384,7 +378,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	padding: 14px 0 0 0;
 	font-size: 18px;
 	font-weight: normal;
-	border-top: 1px solid rgba(123,123,123,0.4);
+	border-top: 1px solid rgba(212, 206, 206, 0.33);
 }
 
 .content {
@@ -400,10 +394,10 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	border-bottom: 1px solid #DDD;
 }
 
-.post_title, .post_content, .comment-body {
+.post_header, .post_content, .comment-body {
 	margin: 0 auto;
 	width: 100%;
-	max-width: 700px;
+	max-width: 600px;
 }
 
 .post_meta {
@@ -412,19 +406,19 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	top: 0;
 	width: 160px;
 	height: 100%;
-	color: #999;
-	background: #2A2424;
+	color: #B5B5B5;
+	background: #494778;
 	border-bottom: 1px solid #444;
 }
 
 .sticker {
-	background: #2A2424;
+	background: #494778;
 }
 
 .post_meta section {
 	margin: 0 16px;
 	padding: 16px 8px;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
 .post_meta section:first-child {
@@ -438,11 +432,11 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 .post_meta section h4 {
 	margin: 4px 0;
 	font-size: 13px;
-	color: #555;
+	color: #DEDEDE;
 }
 
 .post_meta a {
-	color: #999;
+	color: #B5B5B5;
 }
 
 .page .post_meta {
@@ -539,7 +533,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 
 .comment_list li.pingback .comment-body::before {
 	content: "";
-	display: inline;
+	display: inline-block;
 	width: 10px;
 }
 
@@ -652,15 +646,15 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	margin-top: 80px;
 }
 
-.comment_form_meta, .logged-in-as, .must-log-in, #reply-title + p, .comment-meta, .comment-reply-title small, .comment_nav::before, .comment_list li.pingback::before {
+.comment_form_meta, .logged-in-as, .comment-meta, .comment-reply-title small, .comment_nav::before, .comment_list li.pingback::before {
 	float: left;
 	margin: 0;
 	margin-left: -160px;
 	padding: 16px 16px 24px 16px;
 	width: 160px;
 	box-sizing: border-box;
-	background: #2A2424;
-	color: #777;
+	background: #494778;
+	color: #B5B5B5;
 }
 
 .comment-meta, .comment-reply-title small, .comment_nav::before, .comment_list li.pingback::before  {
@@ -675,7 +669,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 .comment-reply-title small {
 	top: -1px;
 	padding-top: 48px;
-	border: 1px solid #333;
+	border: 1px solid rgba(255, 255, 255, 0.35);
 	border-width: 1px 0;
 }
 
@@ -683,8 +677,8 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	margin: 0 6px;
 }
 
-.comment_form_meta a, .logged-in-as a, .must-log-in a, #reply-title + p a, .comment-reply-title small a {
-	color: #999;
+.comment_form_meta a, .logged-in-as a, .comment-reply-title small a {
+	color: #E8E8E8;
 }
 
 .comment-meta a {
@@ -706,16 +700,16 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	background: transparent;
 	color: #EEE;
 	border: none;
-	border-bottom: 1px solid #333;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 	border-radius: 0;
 }
 
 .comment_form_meta input:hover {
-	border-bottom: 1px solid #555;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.50);
 }
 
 .comment_form_meta input:focus {
-	border-bottom: 1px solid #999;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.65);
 }
 
 .comment_form textarea {
@@ -1081,7 +1075,7 @@ input[type="submit"]:active, input[type="button"]:active, button:active, .commen
 	  margin-left: 0;
 }
 
-.logged-in-as, .must-log-in, #reply-title + p, .comment-meta, .comment-reply-title small, .comment_nav::before, .comment_list li.pingback::before {
+.logged-in-as, .comment-meta, .comment-reply-title small, .comment_nav::before, .comment_list li.pingback::before {
 	display: none;
 }
 
